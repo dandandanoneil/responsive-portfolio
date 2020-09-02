@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Bootswatch Theme (Sketchy) -->
     <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <!--  Sticky Footer Stylesheet from Bootstrap -->
+    <link rel="stylesheet" href="assets/css/sticky-footer.css">
 
-    <!-- Background pattern from Toptal Subtle Patterns */ -->
     <style>
+      /* Background pattern from Toptal Subtle Patterns */
       body { background-image: url(assets/images/lightpaperfibers.png);}
+
+      /* Modification to .navbar-brand to make my name larger */
+      .navbar-brand { font-size: xx-large; }
     </style>
 
     <title>Dan O'Neil - About Me</title>
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <!-- Header/Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Dan O'Neil</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/dan-oneil-headshot.jpg" width="45" height="45" class="d-inline-block align-top rounded" alt="" loading="lazy">
+          Dan O'Neil
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,6 +64,12 @@
           </div>
         </div>
     </div>
+
+    <!-- Sticky Footer -->
+    <footer class ="footer bg-primary">
+      <div class="container text-center">
+        <span>© 2020 Dan O'Neil</span>      </div>
+    </footer>
 
     <!-- Bootstrap Javascript links -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
