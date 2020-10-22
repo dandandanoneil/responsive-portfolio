@@ -13,4 +13,7 @@ Portfolio:
 Contact:
 <img src="assets/images/contact-screenshot.png" alt="Contact page screenshot">
 
+## License
+[MIT License](http://opensource.org/licenses/mit-license.php)
+
 > Written with [StackEdit](https://stackedit.io/).
