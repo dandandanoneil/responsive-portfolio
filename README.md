@@ -7,11 +7,11 @@ This responsive web application was made using the [Bootstrap 4.5](https://getbo
 [View the deployed web application.](https://dandandanoneil.github.io/responsive-portfolio/index.html)
 
 Landing page / About Me:
-<img src="assets/images/about-me-screenshot.png" alt="Landing page / About Me screenshot">
+<img src="assets/images/readme/about-me-screenshot.png" alt="Landing page / About Me screenshot">
 Portfolio:
-<img src="assets/images/portfolio-screenshot.png" alt="Portfolio page screenshot">
+<img src="assets/images/readme/portfolio-screenshot.png" alt="Portfolio page screenshot">
 Contact:
-<img src="assets/images/contact-screenshot.png" alt="Contact page screenshot">
+<img src="assets/images/readme/contact-screenshot.png" alt="Contact page screenshot">
 
 ## License
 [MIT License](http://opensource.org/licenses/mit-license.php)
