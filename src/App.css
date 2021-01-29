@@ -1,0 +1,5 @@
+/* Background pattern from Toptal Subtle Patterns */
+body { background-image: url(./lightpaperfibers.png);}
+
+/* Modification to .navbar-brand to make my name larger */
+.navbar-brand { font-size: xx-large; }
