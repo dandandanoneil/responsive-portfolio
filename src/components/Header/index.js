@@ -38,8 +38,7 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link
-              to="/resume.pdf"
-              target="blank"
+              to="/resume"
               className={window.location.pathname === "/resume" ? "nav-link active" : "nav-link"}
             >
               Resume
