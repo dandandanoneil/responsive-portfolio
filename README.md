@@ -4,7 +4,7 @@ React.js app created to showcase my web development projects.
 This application was styled using the [Bootstrap 4.5](https://getbootstrap.com/) framework, and is mobile responsive with breakpoints at 576px, 768px, 992px, and 1200px. I used the "Sketchy" [Bootswatch](https://bootswatch.com/) theme to customize the framework, and the background pattern is "Light Paper Fibers" from [Toptal Subtle Patterns](https://www.toptal.com/designers/subtlepatterns/).
 
 ## Deployed Application
-[View the deployed web application.](https://dandandanoneil.github.io/responsive-portfolio/index.html)
+[View the deployed web application.](https://dandandanoneil.github.io/responsive-portfolio/)
 
 ## Screenshots
 About Me:
