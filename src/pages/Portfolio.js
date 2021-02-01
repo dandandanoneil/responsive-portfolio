@@ -40,7 +40,7 @@ const projects = [
     demoCredentials: "",
     collaborators: "",
     technologies: "JavaScript, React.js, Express, HTML5, Bootstrap Framework",
-    description: "A web application that uses the OpenWeather API to display weather forecast data for a city provided by the user - including temperature data, humidity, wind speed, and UV index."
+    description: "A front-end React.js app using user data from randomuser.me that allows a user to easily view employee data, sort by name or age, ascending or descending, and can filter results using a name search feature."
   },
   {
     title: "Password Generator",
