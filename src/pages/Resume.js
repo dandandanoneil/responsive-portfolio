@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "../components/Container";
 // import { Document, Page } from 'react-pdf';
+import Row from "../components/Row";
+import PageTitle from "../components/PageTitle";
 import resume from "../images/resume.pdf"
 import resume1 from "../images/resume-pg-1.png";
 import resume2 from "../images/resume-pg-2.png";
@@ -10,6 +12,10 @@ function About() {
     <div>
       <Container>
 
+        <Row>
+          <PageTitle>Resume</PageTitle>
+        </Row>
+
         {/* <Document file={resume}>
           <Page pageNumber={1} />
         </Document> */}
@@ -18,7 +24,7 @@ function About() {
           download
           target="blank"
         >
-          Download Resume
+          <i>Download as a PDF</i>
         </a>
         <br/>
         <img
