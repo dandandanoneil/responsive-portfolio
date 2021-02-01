@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function ContactCard() {
   return (
-    <main className="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+    <main className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
       <div className="card text-center p-3 mb-3">
         {/* Name/Title */}
         <div className="col-12">
@@ -12,15 +11,15 @@ function ContactCard() {
         </div>
         {/* Phone */}
         <div className="col-12">
-          <Link target="_blank" to="tel:440.708.3326">
+          <a target="blank" href="tel:440.708.3326">
             <h4>(440) 708-3326</h4>
-          </Link>
+          </a>
         </div>
         {/* Email */}
         <div className="col-12">
-          <Link target="_blank" to="mailto:dhoneil@gmail.com">
+          <a target="blank" href="mailto:dhoneil@gmail.com">
             <h4>dhoneil@gmail.com</h4>
-          </Link>
+          </a>
         </div>
       </div>
     </main>
