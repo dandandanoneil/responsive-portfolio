@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/responsive-portfolio/static/css/main.9d2a613a.chunk.css",
-    "main.js": "/responsive-portfolio/static/js/main.66752436.chunk.js",
-    "main.js.map": "/responsive-portfolio/static/js/main.66752436.chunk.js.map",
+    "main.js": "/responsive-portfolio/static/js/main.6379908b.chunk.js",
+    "main.js.map": "/responsive-portfolio/static/js/main.6379908b.chunk.js.map",
     "runtime-main.js": "/responsive-portfolio/static/js/runtime-main.42c29d6f.js",
     "runtime-main.js.map": "/responsive-portfolio/static/js/runtime-main.42c29d6f.js.map",
     "static/css/2.a5deb7ad.chunk.css": "/responsive-portfolio/static/css/2.a5deb7ad.chunk.css",
@@ -20,13 +20,16 @@
     "static/media/Weather Dashboard.616a0070.png": "/responsive-portfolio/static/media/Weather Dashboard.616a0070.png",
     "static/media/dan-oneil-headshot.183b439b.jpg": "/responsive-portfolio/static/media/dan-oneil-headshot.183b439b.jpg",
     "static/media/instagram.5fc82795.png": "/responsive-portfolio/static/media/instagram.5fc82795.png",
-    "static/media/App.css": "/responsive-portfolio/static/media/lightpaperfibers.9efbaca7.png"
+    "static/media/App.css": "/responsive-portfolio/static/media/lightpaperfibers.9efbaca7.png",
+    "static/media/resume-pg-1.9d191502.png": "/responsive-portfolio/static/media/resume-pg-1.9d191502.png",
+    "static/media/resume-pg-2.e7f6e33a.png": "/responsive-portfolio/static/media/resume-pg-2.e7f6e33a.png",
+    "static/media/resume.2aa537b0.pdf": "/responsive-portfolio/static/media/resume.2aa537b0.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.42c29d6f.js",
     "static/css/2.a5deb7ad.chunk.css",
     "static/js/2.d6385686.chunk.js",
     "static/css/main.9d2a613a.chunk.css",
-    "static/js/main.66752436.chunk.js"
+    "static/js/main.6379908b.chunk.js"
   ]
 }
