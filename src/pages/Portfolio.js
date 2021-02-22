@@ -1,17 +1,28 @@
 import React from "react";
-import Container from "../components/Container";
-import Row from "../components/Row";
 import PageTitle from "../components/PageTitle";
 import Project from "../components/Project";
 
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+
+import careImage from "../images/portfolio/Care Package.png";
 import vinylImage from "../images/portfolio/Vinyl Destination.png";
 import travelImage from "../images/portfolio/Travel Companion.png";
 import bookImage from "../images/portfolio/Google Book Search.png";
 import passwordImage from "../images/portfolio/Password Generator.png";
 import employeeImage from "../images/portfolio/Employee Directory.png";
-import budgetImage from "../images/portfolio/Budget Tracker.png";
 
 const projects = [
+  {
+    title: "Care Package",
+    image: careImage,
+    gitHubLink: "https://github.com/dandandanoneil/care-package",
+    deployedLink: "https://care-package.herokuapp.com/",
+    demoCredentials: "",
+    collaborators: "Collaboration with Luis Canahuate & Skyler Dakota Lawton",
+    technologies: "React, JavaScript, MongoDB, Node, Express, Mongoose, Passport ",
+    description: "A full-stack (MERN) app designed to bring local communities together around resource sharing. Care Package allows the user to create an account to post offers, requests, or community sharing events, and comment on other user's posts within a demonetized marketplace."
+  },
   {
     title: "Vinyl Destination",
     image: vinylImage,
@@ -61,16 +72,6 @@ const projects = [
     collaborators: "",
     technologies: "JavaScript, React.js, Express, HTML5, Bootstrap Framework",
     description: "A front-end React.js app using user data from randomuser.me that allows a user to easily view employee data, sort by name or age, ascending or descending, and can filter results using a name search feature."
-  },
-  {
-    title: "Budget Tracker",
-    image: budgetImage,
-    gitHubLink: "https://github.com/dandandanoneil/budget-tracker/",
-    deployedLink: "https://dandandanoneil-budget-tracker.herokuapp.com/",
-    demoCredentials: "",
-    collaborators: "",
-    technologies: "JavaScript, MongoDB, Express, HTML5, Bootstrap Framework",
-    description: "A web application that utilizes MongoDB, Mongoose, Node, and Express to track a user's budget, and uses IndexedDB to log transactions while offline, then sync transactions when brought back online."
   }
 ]
 
@@ -78,17 +79,12 @@ function About() {
   return (
     <div>
       <Container>
-
-        <Row>
-          <PageTitle>Portfolio</PageTitle>
-        </Row>
-
+        <PageTitle>Portfolio</PageTitle>
         <Row>
           {projects.map(project => (
-            <Project project={project}/>
+            <Project project={project} key={project.gitHubLink}/>
           ))}
         </Row>
-
       </Container>
     </div>
   );

@@ -1,49 +1,54 @@
 import React from "react";
-import Row from "../Row";
+
 import gitHubIcon from "../../images/icons/github.png";
 import linkedInIcon from "../../images/icons/linkedin.png";
 import stackOverflowIcon from "../../images/icons/stackoverflow.png";
 import instagramIcon from "../../images/icons/instagram.png";
 
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
+
 function IconCard() {
   return (
-    <aside className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
-      <div className="card text-center p-3 mb-3">
+    <Col lg="9">
+      <Card className="text-center p-3 mb-3">
         {/* Card Title */}
         <Row>
-          <div className="col-12">
-            <h4 className="card-title">Find me online:</h4>
-          </div>
+          <Col>
+            <Card.Title as="h4">Find me online:</Card.Title>
+          </Col>
         </Row>
         {/* Online Links */}
         <Row>
           {/* GitHub */}
-          <div className="col-3">
+          <Col xs="3">
             <a target="blank" href="//github.com/dandandanoneil">
-              <img src={gitHubIcon} alt="GitHub icon" className="img-thumbnail w-100 img-fluid" style={{ maxWidth: 128 }} />
+              <Image thumbnail fluid src={gitHubIcon} alt="GitHub icon" className="w-100" style={{ maxWidth: 128 }} />
             </a>
-          </div>
+          </Col>
           {/* LinkedIn */}
-          <div className="col-3">
+          <Col xs="3">
             <a target="blank" href="//www.linkedin.com/in/dhoneil/">
-              <img src={linkedInIcon} alt="LinkedIn icon" className="img-thumbnail w-100 img-fluid" style={{ maxWidth: 128 }} />
+              <Image thumbnail fluid src={linkedInIcon} alt="LinkedIn icon" className="w-100" style={{ maxWidth: 128 }} />
             </a>
-          </div>
+          </Col>
           {/* Stack Overflow */}
-          <div className="col-3">
+          <Col xs="3">
             <a target="blank" href="//stackoverflow.com/users/14072252/dan-oneil?tab=profile">
-              <img src={stackOverflowIcon} alt="Stack Overflow icon" className="img-thumbnail w-100 img-fluid" style={{ maxWidth: 128 }} />
+              <Image thumbnail fluid src={stackOverflowIcon} alt="Stack Overflow icon" className="w-100" style={{ maxWidth: 128 }} />
             </a>
-          </div>
+          </Col>
           {/* Instagram */}
-          <div className="col-3">
+          <Col xs="3">
             <a target="blank" href="//www.instagram.com/dandandanoneil/">
-              <img src={instagramIcon} alt="Instagram icon" className="img-thumbnail w-100 img-fluid" style={{ maxWidth: 128 }} />
+              <Image thumbnail fluid src={instagramIcon} alt="Instagram icon" className="w-100" style={{ maxWidth: 128 }} />
             </a>
-          </div>
+          </Col>
         </Row>
-      </div>
-    </aside>
+      </Card>
+    </Col>
 );
 }
 

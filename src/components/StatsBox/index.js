@@ -1,16 +1,23 @@
 import React from "react";
+
 import headshot from "../../images/dan-oneil-headshot.jpg";
+
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import Card from "react-bootstrap/Card";
+import Table from "react-bootstrap/Table";
 
 function StatsBox() {
   return (
-    <>
-      <aside className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-3">
-        <img src={headshot} alt="Dan O'Neil headshot" className="img-fluid rounded-lg" />
-      </aside>
+    <Row>
+      <Col lg="3" md="4" xs="6" className="mb-3">
+        <Image fluid rounded src={headshot} alt="Dan O'Neil headshot" />
+      </Col>
 
-      <section className="col-xl-6 col-lg-6 col-md-8 col-sm-6 col-xs-6 mb-3">
-        <div className="card bg-primary p-1">
-          <table className="table-sm table-dark ">
+      <Col lg="6" md="8" xs="6" className="mb-3">
+        <Card bg="primary" className="p-1">
+          <Table borderless size="sm" variant="dark ">
             <tbody>
               <tr><th>NAME:</th><td>Dan O'Neil</td></tr>
               <tr><th>PRONOUNS:</th><td>he/him/his <small>(<a href="https://www.mypronouns.org/he-him" target="blank" className="text-light">what's this?</a>)</small></td></tr>
@@ -18,10 +25,10 @@ function StatsBox() {
               <tr><th>LOCATION:</th><td>Philadelphia, PA </td></tr>
               <tr><th>EDUCATION:</th><td>Certificate, Full Stack Web Development, <i>University of Pennsylvania</i><br/>BFA Theatre, <i>The University of the Arts</i></td></tr>
             </tbody>
-          </table>
-        </div>
-      </section>
-    </>
+          </Table>
+        </Card>
+      </Col>
+    </Row>
   );
 }
 

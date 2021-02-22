@@ -1,28 +1,31 @@
 import React from "react";
 
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+
 function ContactCard() {
   return (
-    <main className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
-      <div className="card text-center p-3 mb-3">
+    <Col lg="9">
+      <Card className="text-center p-3 mb-3">
         {/* Name/Title */}
-        <div className="col-12">
+        <Col>
           <h2>Dan O'Neil</h2>
           <h4><i>Full Stack Web Developer</i></h4>
-        </div>
+        </Col>
         {/* Phone */}
-        <div className="col-12">
+        <Col>
           <a target="blank" href="tel:440.708.3326">
             <h4>(440) 708-3326</h4>
           </a>
-        </div>
+        </Col>
         {/* Email */}
-        <div className="col-12">
+        <Col>
           <a target="blank" href="mailto:dhoneil@gmail.com">
             <h4>dhoneil@gmail.com</h4>
           </a>
-        </div>
-      </div>
-    </main>
+        </Col>
+      </Card>
+    </Col>
 );
 }
 

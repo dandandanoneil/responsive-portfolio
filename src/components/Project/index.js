@@ -1,15 +1,17 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import Col from "../Col";
+
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
 function Project(props) {
   return (
-    <Col size="md-6">
+    <Col md="6">
       <a href={props.project.gitHubLink} target="blank">
-        <img 
-        src={props.project.image}
-        alt={props.project.title} 
-        className="img-fluid border border-primary"/>
+        <Image
+          fluid
+          src={props.project.image}
+          alt={props.project.title} 
+          className="border border-primary"/>
       </a>
       <h5>{props.project.title}</h5>
       <div>

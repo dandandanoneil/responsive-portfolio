@@ -1,20 +1,20 @@
 import React from "react";
-import Container from "../components/Container";
 // import { Document, Page } from 'react-pdf';
-import Row from "../components/Row";
+
 import PageTitle from "../components/PageTitle";
+
 import resume from "../images/resume.pdf"
 import resume1 from "../images/resume-pg-1.png";
 import resume2 from "../images/resume-pg-2.png";
+
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
 
 function About() {
   return (
     <div>
       <Container>
-
-        <Row>
-          <PageTitle>Resume</PageTitle>
-        </Row>
+        <PageTitle>Resume</PageTitle>
 
         {/* <Document file={resume}>
           <Page pageNumber={1} />
@@ -27,16 +27,16 @@ function About() {
           <i>Download as a PDF</i>
         </a>
         <br/>
-        <img
+        <Image
+          fluid
           src={resume1}
           alt={"Resume Page 1"} 
-          className="img-fluid"
           style={{ maxWidth: "800px", width: "100%" }}
         />
-        <img
+        <Image
+          fluid
           src={resume2}
           alt={"Resume Page 2"} 
-          className="img-fluid"
           style={{ maxWidth: "800px", width: "100%" }}
         />
 

@@ -1,12 +1,17 @@
 import React from "react";
 
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 function PageTitle(props) {
   return (
-    <header className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
-      <h1>
-        {props.children}
-      </h1>
-    </header>
+    <Row>
+      <Col lg="9">
+        <h1>
+          {props.children}
+        </h1>
+      </Col>
+    </Row>
   );
 }
 
